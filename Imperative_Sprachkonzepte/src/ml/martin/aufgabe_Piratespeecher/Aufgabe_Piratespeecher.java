@@ -53,6 +53,7 @@ public class Aufgabe_Piratespeecher {
 		System.out.println("Auf wiedersehen.");
 	}
 
+	@SuppressWarnings("unused")
 	private static String piratiseTextSimple(String textToConvert) {
 		// every a e i o u should be a piratised character
 
