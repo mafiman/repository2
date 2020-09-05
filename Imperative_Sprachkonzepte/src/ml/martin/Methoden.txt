@@ -1,0 +1,53 @@
+- Warum gibt es Methoden (in anderen Sprachen Funktionen, Prozeduren)?
+  Um den Programmcode zu gliedern und wiederverwendbarer zu machen. Methoden die 
+  definierte Ein- und Ausgaben und wiedererkennbare Namen haben sind einfacher zu lesen 
+  und man kann sie öfter einsetzen.
+   
+- Woraus besteht jede statische Methode (Name, Parameterliste...)?
+  Es gibt die Sichtbarkeitseinstellung (public, private), den Begriff static, den Rückgabe Datentyp, 
+  den Namen, die Parameterliste, und letztendlich den Anweisungsblock.
+   
+- Was ist eine Methoden-Signatur?
+  Um Methoden unterscheiden zu können gibt es die Signatur aus Name und Parameter -Anzahl, -Reihenfolge und -Typ.
+   
+- Was ist eine lokale Variable? Wo ist sie gültig? Soll sie initialisiert werden?
+  Eine lokale Variable ist in einem Block in einer Methode definiert. 
+  Bevor auf sie zugegriffen werden kann muss sie deklariert und initialisiert werden.
+  Sie ist innerhalb einer Methode in der sie deklariert worden ist.
+   
+- Was ist eine Blockvariable? Wo ist sie gültig?
+  Eine Blockvariable ist innerhalb eines Codeblocks deklariert worden.
+   Sie ist innerhalb eines Blocks gültig, in der sie deklariert worden ist.
+   
+- Legen Sie bitte in einer Methode zwei Variablen mit demselben Namen an.
+  Das geht nicht, geht nur in einem Block jede für sich. 
+    
+- Wozu gibt es Parameter?
+  Um Daten an eine Methode weiter zu reichen und die Werte innerhalb einer Methode zugreifbar zu machen.  
+
+- Was ist Varargs und wie wird es verwendet?
+  Varargs werden verwendet um eine Variable Anzahl von Parametern an eine Methode weiter zu reichen.
+     
+- Kann man lokale Variablen und Parameter vergleichen?
+   Lediglich die Werte der Parameter sind von aussen angegeben werden.
+   
+- In welchen Zeilen ist Casting überflüssig?
+  
+	static short foo(byte b) {
+	    return (short) 2;			// Zeile A
+	}
+	
+	static void test() {
+	    byte b = (byte) 2;		// Zeile B
+	
+	    foo((byte) 2);				// Zeile C
+	}
+	//nicht in allen nein,
+	// c ist notwendig weil implizites casting nicht erkannt wird,
+	//  a wird "erkannt"als Datentyp passend
+	// b wird solange Zuweisung vom Bereich passt ok
+
+- Was ist Überladen?
+  Überladen beschreibt den Vorgang in einer Klasse mehrere Methoden anzulegen, 
+  die den selben Namen haben und sich nur in der Anzahl, der Reihenfolge oder dem Datentyp der Parameter 
+  unterscheiden.
