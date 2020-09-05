@@ -116,10 +116,12 @@ public class Kuh {
 
 	@Override
 	public String toString() {
-		return "Kuh [" + (name != null ? "name=" + name + ", " : "")
-				+ (hauptfarbe != null ? "hauptfarbe=" + hauptfarbe + ", " : "")
-				+ (fleckenfarbe != null ? "fleckenfarbe=" + fleckenfarbe + ", " : "") + "milchmenge=" + milchmenge
-				+ ", gewicht=" + gewicht + "]";
+		return "Kuh [" + "Markennummer=" + this.markenNummer +", "
+	            + (this.name != null ? "name=" + this.name + ", " : "")
+				+ (this.hauptfarbe != null ? "hauptfarbe=" + hauptfarbe + ", " : "")
+				+ (this.fleckenfarbe != null ? "fleckenfarbe=this." + this.fleckenfarbe + ", " : "") 
+				+ "milchmenge=" + this.milchmenge
+				+ ", gewicht=" + this.gewicht + "]";
 	}
 
 	public Kuh(int markenNummer) {

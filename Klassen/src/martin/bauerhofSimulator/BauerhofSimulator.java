@@ -241,16 +241,16 @@ public class BauerhofSimulator {
 	}
 
 	/**
-	 * Suche den Index der Kuh mit der Ohrnummer.
+	 * Suche den Index der Kuh mit der MarkenNummer.
 	 * 
-	 * @param gesuchteOhrnummer
+	 * @param gesuchteMarkenNummermer
 	 *
 	 * @return index der Kuh mit der Nummer, oder -1
 	 */
-	private static int sucheKuhIndexMitOhrnummer(int gesuchteOhrnummer) {
+	private static int sucheKuhIndexMitMarkenNummer(int gesuchteMarkenNummer) {
 		int kuhIndex = -1;
 		for (int index = 0; index < kuhHerde.size(); index++) {
-			if (kuhHerde.get(index).getMarkenNummer() == gesuchteOhrnummer) {
+			if (kuhHerde.get(index).getMarkenNummer() == gesuchteMarkenNummer) {
 				System.out.println("Tier gefunden.");
 
 				kuhIndex = index;
@@ -262,14 +262,14 @@ public class BauerhofSimulator {
 
 	private static void doFuettern() {
 		System.out.println("Kuh fuettern:");
-		System.out.println("Bitte die Ohrnummer angeben:");
-		int gesuchteOhrnummer = Integer.valueOf(scanner.nextLine());
+		System.out.println("Bitte die MarkenNummer angeben:");
+		int gesuchteMarkenNummer = Integer.valueOf(scanner.nextLine());
 
 		System.out.println("Bitte die menge Kuhfutter angeben:");
 		float zuFuetterndeMenge = Float.valueOf(scanner.nextLine());
-		int kuhIndex = sucheKuhIndexMitOhrnummer(gesuchteOhrnummer);
+		int kuhIndex = sucheKuhIndexMitMarkenNummer(gesuchteMarkenNummer);
 		if (kuhIndex != -1) {
-			System.out.println("Soll die Kuh mit der Nr." + gesuchteOhrnummer + " gefüttert werden?");
+			System.out.println("Soll die Kuh mit der Nr." + gesuchteMarkenNummer + " gefüttert werden?");
 			if (askJaNein()) {
 				float gewicht = kuhHerde.get(kuhIndex).fressen(zuFuetterndeMenge);
 				System.out.println("Das Tier ist gefuettert worden und wiegt nun " + gewicht + ".");
@@ -284,14 +284,14 @@ public class BauerhofSimulator {
 
 	private static void doAusfuehren() {
 		System.out.println("Kuh ausfuehren:");
-		System.out.println("Bitte die Ohrnummer angeben:");
-		int gesuchteOhrnummer = Integer.valueOf(scanner.nextLine());
+		System.out.println("Bitte die MarkenNummer angeben:");
+		int gesuchteMarkenNummer = Integer.valueOf(scanner.nextLine());
 
 		System.out.println("Bitte die gelaufene Strecke angeben:");
 		float streckeZuLaufen = Float.valueOf(scanner.nextLine());
-		int kuhIndex = sucheKuhIndexMitOhrnummer(gesuchteOhrnummer);
+		int kuhIndex = sucheKuhIndexMitMarkenNummer(gesuchteMarkenNummer);
 		if (kuhIndex != -1) {
-			System.out.println("Ist die Kuh mit der Nr." + gesuchteOhrnummer + " ausgefuehrt worden?");
+			System.out.println("Ist die Kuh mit der Nr." + gesuchteMarkenNummer + " ausgefuehrt worden?");
 			if (askJaNein()) {
 				float gewicht = kuhHerde.get(kuhIndex).laufen(streckeZuLaufen);
 				System.out.println("Das Tier ist ausgeführt worden und wiegt nun " + gewicht + ".");
@@ -306,15 +306,15 @@ public class BauerhofSimulator {
 
 	private static void doMelken() {
 		System.out.println("Kuh melken:");
-		System.out.println("Bitte die Ohrnummer angeben:");
-		int gesuchteOhrnummer = Integer.valueOf(scanner.nextLine());
+		System.out.println("Bitte die MarkenNummer angeben:");
+		int gesuchteMarkenNummer = Integer.valueOf(scanner.nextLine());
 
 		System.out.println("Bitte die zu melkenden Liter angeben:");
 		float zuMelkendeLiter = Float.valueOf(scanner.nextLine());
 
-		int kuhIndex = sucheKuhIndexMitOhrnummer(gesuchteOhrnummer);
+		int kuhIndex = sucheKuhIndexMitMarkenNummer(gesuchteMarkenNummer);
 		if (kuhIndex != -1) {
-			System.out.println("Soll die Kuh mit der Nr." + gesuchteOhrnummer + " gemolken werden?");
+			System.out.println("Soll die Kuh mit der Nr." + gesuchteMarkenNummer + " gemolken werden?");
 			if (askJaNein()) {
 				float gemolkeneLiter = kuhHerde.get(kuhIndex).melken(zuMelkendeLiter);
 				System.out.println("Das Tier ist um " + gemolkeneLiter + " gemolken worden.");
@@ -328,7 +328,7 @@ public class BauerhofSimulator {
 
 	private static void doAnlegen() {
 		System.out.println("Kuh anlegen:");
-		System.out.println("Bitte die Ohrnummer angeben:");
+		System.out.println("Bitte die MarkenNummer angeben:");
 		int ohrnr = Integer.valueOf(scanner.nextLine());
 
 		System.out.println("Bitte den namen angeben(Berta):");
@@ -384,9 +384,9 @@ public class BauerhofSimulator {
 
 	private static void doEntfernen() {
 		System.out.println("Kuh entfernen:");
-		System.out.println("Bitte die Ohrnummer angeben:");
-		int gesuchteOhrnummer = Integer.valueOf(scanner.nextLine());
-		int kuhIndex = sucheKuhIndexMitOhrnummer(gesuchteOhrnummer);
+		System.out.println("Bitte die MarkenNummer angeben:");
+		int gesuchteMarkenNummer = Integer.valueOf(scanner.nextLine());
+		int kuhIndex = sucheKuhIndexMitMarkenNummer(gesuchteMarkenNummer);
 		if (kuhIndex != -1) {
 			System.out.println("Soll die Kuh entfernt werden?");
 			if (askJaNein()) {
@@ -403,9 +403,9 @@ public class BauerhofSimulator {
 
 	private static void doEineKuhAnzeigen() {
 		System.out.println("Kuh anzeigen:");
-		System.out.println("Bitte die Ohrnummer angeben:");
-		int gesuchteOhrnummer = Integer.valueOf(scanner.nextLine());
-		int kuhIndex = sucheKuhIndexMitOhrnummer(gesuchteOhrnummer);
+		System.out.println("Bitte die MarkenNummer angeben:");
+		int gesuchteMarkenNummer = Integer.valueOf(scanner.nextLine());
+		int kuhIndex = sucheKuhIndexMitMarkenNummer(gesuchteMarkenNummer);
 		if (kuhIndex != -1) {
 			System.out.println("Kuhdaten:" + kuhHerde.get(kuhIndex));
 
