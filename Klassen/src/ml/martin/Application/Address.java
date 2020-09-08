@@ -123,7 +123,7 @@ public class Address {
 	 * 
 	 * @return Endkunde ja oder nein
 	 */
-	public boolean getEndkunde() {
+	public boolean isEndkunde() {
 		return this.endkunde;
 	}
 	/**

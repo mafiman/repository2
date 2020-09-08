@@ -36,7 +36,7 @@ public class Application {
 
 		System.out.println("\nTest Application Hauptprogramm");
 
-		Address autohersteller = new Address("Autohersteller", "", "Autoplatz", "1", 11111, "Autostadt");
+		Address autohersteller = new Address("Autohersteller",  "Autoplatz", "1", 11111, "Autostadt");
 		Address autohaus01 = new Address("Peter", "Musterautohaus", "Spielstrasse", "15", 76534, "Bretterbach");
 		Address autohaus02 = new Address("Eva", "Musterautohaus", "Milchstrasse", "14", 90234, "Galazien");
 		Address autohaus03 = new Address("Luca", "Musterautohaus", "Marktplatz", "2", 80888, "München");
@@ -49,8 +49,7 @@ public class Application {
 		System.out.println("Ausgabetest der drei Fahrzeuge:");
 		System.out.println("Fahrzeug 1");
 		car01.printMotorVehicle();
-		// System.out.println(" Genauere Abmessungen: "+ car01
-		// .getDimensions().toStringExtra());
+		System.out.println(" Genauere Abmessungen: "+ car01.getDimensions().toStringExtra());
 		System.out.println("\nFahrzeug 2");
 		car02.printMotorVehicle();
 		// System.out.println(" Genauere Abmessungen: "+ car02
@@ -62,18 +61,8 @@ public class Application {
 
 		System.out.println("\nApplication Test ende.");
 	}
-	// private static Attribute
 
-	// private Attribute
-
-	// public setter /getter
-
-	// Konstruktoren ohne Parameter, mit std Parametern
 	public Application() {
-
 	}
-	// Standartmethoden toString() equals() hash()
-
-	// methoden alltegemein
-
+	
 }
