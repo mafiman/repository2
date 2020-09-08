@@ -116,22 +116,15 @@ public class Kuh {
 
 	@Override
 	public String toString() {
-		return "Kuh [" + "Markennummer=" + this.markenNummer +", "
-	            + (this.name != null ? "name=" + this.name + ", " : "")
-				+ (this.hauptfarbe != null ? "hauptfarbe=" + hauptfarbe + ", " : "")
-				+ (this.fleckenfarbe != null ? "fleckenfarbe=this." + this.fleckenfarbe + ", " : "") 
-				+ "milchmenge=" + this.milchmenge
-				+ ", gewicht=" + this.gewicht + "]";
+		return "Kuh [" + "Markennummer=" + this.getMarkenNummer() +", "
+	            + (this.name != null ? "name=" + this.getName() + ", " : "")
+				+ (this.hauptfarbe != null ? "hauptfarbe=" + this.getHauptfarbe() + ", " : "")
+				+ (this.fleckenfarbe != null ? "fleckenfarbe=" + this.getFleckenfarbe() + ", " : "") 
+				+ "milchmenge=" + this.getMilchmenge()
+				+ ", gewicht=" + this.getGewicht() + "]";
 	}
 
-	public Kuh(int markenNummer) {
-		this.markenNummer = markenNummer;
-		this.name = "";
-		this.hauptfarbe = "weiss";
-		this.fleckenfarbe = "schwarz";
-		this.milchmenge = 0;
-		this.gewicht = 100;
-	}
+	
 
 	@Override
 	public int hashCode() {
@@ -155,6 +148,22 @@ public class Kuh {
 				&& Objects.equals(getName(), other.name) && (getMarkenNummer() == other.getMarkenNummer());
 	}
 
+	/**
+	 * Konstruktor ohne Parameter
+	 */
+	public Kuh() {
+		//this.setMarkenNummer(MetaKuh.getNaechsteFreieMarkenNummer() );
+		// Kaskadierender Aufruf
+		this(MetaKuh.getNaechsteFreieMarkenNummer());
+	}
+	public Kuh(int markenNummer) {
+		this.setMarkenNummer(markenNummer);
+		this.setName("Hilde");
+		this.setHauptfarbe("Braun");
+		this.setFleckenfarbe("Weiss");
+		this.setMilchmenge(100);
+		this.setGewicht(650);
+	}
 	/**
 	 * 
 	 * @param melkMenge
