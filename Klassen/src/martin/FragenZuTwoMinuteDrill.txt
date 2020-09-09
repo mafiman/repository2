@@ -1,0 +1,11 @@
+Fragen zum two-Minute Drill
+
+Class Modifiers Access -> protected
+Class Modifiers -> final abstract strictfp
+
+Abstact Classes
+
+interfaces 
+checked exceptions
+legal class and interface declarations
+
