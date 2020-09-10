@@ -4,7 +4,7 @@
   router="FAN">  
   <class id="1" language="java" name="ml.martin.AufgabeTag11.Aufgabe4.FoundValue" project="Klassen" 
     file="/Klassen/src/ml/martin/AufgabeTag11/Aufgabe4.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="149" y="386"/>    
+    <position height="-1" width="-1" x="247" y="407"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -13,7 +13,7 @@
   </class>  
   <enumeration id="2" language="java" name="ml.martin.AufgabeTag11.Aufgabe4.SearchModus" project="Klassen" 
     file="/Klassen/src/ml/martin/AufgabeTag11/Aufgabe4.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="407" y="396"/>    
+    <position height="-1" width="-1" x="437" y="389"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -22,7 +22,7 @@
   </enumeration>  
   <class id="3" language="java" name="ml.martin.AufgabeTag11.Aufgabe4" project="Klassen" 
     file="/Klassen/src/ml/martin/AufgabeTag11/Aufgabe4.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="308" y="135"/>    
+    <position height="-1" width="-1" x="356" y="214"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
