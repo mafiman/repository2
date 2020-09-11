@@ -28,7 +28,7 @@ public class Aufgabe2 {
 		}
 		System.out.println("Ausgabe Array:");
 
-		// Berechnung der ggesuchten Werte
+		// Berechnung der gesuchten Werte
 		// Summe aller Zahlen im Array:
 		int summe = 0;
 		int average = 0;

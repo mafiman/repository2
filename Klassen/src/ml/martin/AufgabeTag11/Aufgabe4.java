@@ -1,5 +1,6 @@
 /**
- Aufgabe 4: Suchen im Array
+ *  @Aufgabe 4:
+Suchen im Array
 Schreiben Sie eine Anwendung, die 100.000 Zufallszahlen zwischen 0 und 50.000 in ein Array
 schreibt. Der Anwender soll eine zu suchende Zahl eingeben und die Anwendung soll im Array nach
 der Zahl suchen. Fangen Sie fehlerhafte Eingaben der gesuchten Zahl auf die obere und untere
